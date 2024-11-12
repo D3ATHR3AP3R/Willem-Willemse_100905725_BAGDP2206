@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using Unity.Netcode;
 using Unity.Netcode.Transports.UTP;
@@ -8,7 +6,6 @@ using Unity.Services.Core;
 using Unity.Services.Relay;
 using Unity.Services.Relay.Models;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class TestRelay : MonoBehaviour
 {
@@ -50,7 +47,8 @@ public class TestRelay : MonoBehaviour
 
             NetworkManager.Singleton.StartHost();
 
-        } catch (RelayServiceException e)
+        }
+        catch (RelayServiceException e)
         {
             Debug.Log(e);
         }
@@ -89,7 +87,8 @@ public class TestRelay : MonoBehaviour
 
             NetworkManager.Singleton.StartClient();
 
-        } catch (RelayServiceException e)
+        }
+        catch (RelayServiceException e)
         {
             Debug.Log(e);
         }

@@ -9,13 +9,13 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Map
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Projectile
+  - Player
+  - PickUp
+  - MapObjects
   - 
   - 
   - 
@@ -48,11 +48,17 @@ TagManager:
   - name: Pickup
     uniqueID: 4042921335
     locked: 0
+  - name: TerrainItems
+    uniqueID: 646002389
+    locked: 0
   - name: Enemy
     uniqueID: 187787609
     locked: 0
   - name: Player
     uniqueID: 2654416845
+    locked: 0
+  - name: VFX
+    uniqueID: 2376046019
     locked: 0
   - name: UI
     uniqueID: 3857613525

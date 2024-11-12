@@ -1,18 +1,8 @@
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-using System.Threading.Tasks;
-using Unity.Services.Authentication;
-using Unity.Services.Core;
-using System;
 using TMPro;
-using Object = UnityEngine.Object;
-using Unity.Netcode.Transports.UTP;
-using Unity.Services.Lobbies;
-using Unity.Services.Lobbies.Models;
-using Unity.Services.Relay;
 using Unity.Netcode;
-using Unity.Services.Relay.Models;
+using Unity.Netcode.Transports.UTP;
+using UnityEngine;
 
 public class MatchMaker : MonoBehaviour
 {
@@ -26,7 +16,7 @@ public class MatchMaker : MonoBehaviour
     public TMP_InputField joinAddress;
     public TMP_InputField hostAddress;
 
-    public new List<GameObject> cameraLists;
+    public List<GameObject> cameraLists;
 
     public UnityTransport.ConnectionAddressData ConnectionData;
 
@@ -112,7 +102,7 @@ public class MatchMaker : MonoBehaviour
 
             for (int i = 0; i < cameraLists.Count; i++)
             {
-                if(i != ownerId)
+                if (i != ownerId)
                 {
                     cameraLists[i].GetComponentInChildren<Camera>().enabled = false;
                 }
